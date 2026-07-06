@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { personalInfo } from "../constants";
 
 const Contact = () => {
   const formRef = useRef();
@@ -37,9 +38,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: personalInfo.name,
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: personalInfo.email,
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -74,6 +75,25 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+
+        <div className='mt-5 flex flex-wrap gap-4 text-white-100 text-[14px]'>
+          <div className='flex items-center gap-2 bg-tertiary py-2 px-4 rounded-xl border border-secondary/10'>
+            <span>📍</span>
+            <span>{personalInfo.location}</span>
+          </div>
+          <a href={`mailto:${personalInfo.email}`} className='flex items-center gap-2 bg-tertiary py-2 px-4 rounded-xl border border-secondary/10 hover:border-[#915EFF]/50 transition-colors'>
+            <span>📧</span>
+            <span>{personalInfo.email}</span>
+          </a>
+          <a href={personalInfo.github} target='_blank' rel='noreferrer' className='flex items-center gap-2 bg-tertiary py-2 px-4 rounded-xl border border-secondary/10 hover:border-[#915EFF]/50 transition-colors'>
+            <span>💻</span>
+            <span>GitHub</span>
+          </a>
+          <a href={personalInfo.linkedin} target='_blank' rel='noreferrer' className='flex items-center gap-2 bg-tertiary py-2 px-4 rounded-xl border border-secondary/10 hover:border-[#915EFF]/50 transition-colors'>
+            <span>🔗</span>
+            <span>LinkedIn</span>
+          </a>
+        </div>
 
         <form
           ref={formRef}

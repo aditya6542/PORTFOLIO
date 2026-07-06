@@ -4,25 +4,33 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
   git,
-  figma,
+  mongodb,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  python,
+  java,
+  cplusplus,
+  flask,
+  fastapi,
+  firebase,
+  vercel,
+  vscode,
+  github_tech,
+  render_tech,
+  railway_tech,
+  geeksforgeeks,
+  education,
   carrent,
   jobit,
   tripguide,
-  threejs,
+  typescript,
+  redux,
+  tailwind,
+  nodejs,
+  figma,
 } from "../assets";
 
 export const navLinks = [
@@ -32,7 +40,11 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Work & Education",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -42,20 +54,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Python Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "AI & ML Enthusiast",
     icon: creator,
+  },
+  {
+    title: "Full Stack Developer",
+    icon: web,
+  },
+  {
+    title: "B.Tech CSE Student",
+    icon: mobile,
   },
 ];
 
@@ -97,16 +109,12 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Figma",
+    icon: figma,
   },
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
   {
     name: "docker",
@@ -116,123 +124,131 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Bachelor of Technology (B.Tech)",
+    company_name: "Amity University, Noida",
+    icon: education,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2024 – 2028",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Pursuing a Bachelor of Technology in Computer Science & Engineering.",
+      "Current CGPA: ~6",
+      "Gaining hands-on experience in computer science fundamentals, data structures, and algorithms.",
+      "Exploring Python development, AI/ML models, backend development, and web systems.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Team Coordinator",
+    company_name: "GeeksforGeeks Student Chapter",
+    icon: geeksforgeeks,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "2024 – Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Managed technical event coordination and organization for student activities.",
+      "Collaborated closely with the marketing team to design outreach strategies and promotional campaigns.",
+      "Organized workshops, hackathons, and coding contests to foster student growth in development.",
+      "Coordinated with student volunteers to guarantee seamless event execution and high participation rates.",
     ],
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+const personalInfo = {
+  name: "Aditya Mehta",
+  title: "B.Tech CSE Student | Python Developer | AI & ML Enthusiast | Full Stack Developer",
+  shortIntro: "I am a Computer Science student at Amity University with a strong interest in Python development, Artificial Intelligence, Machine Learning, and full-stack web development. I enjoy building practical applications that solve real-world problems while continuously learning new technologies and improving my problem-solving skills.",
+  email: "adityamehta@example.com",
+  github: "https://github.com/",
+  linkedin: "https://linkedin.com/",
+  location: "Noida, India",
+  aboutMe: {
+    paragraphs: [
+      "I'm currently pursuing a Bachelor of Technology in Computer Science & Engineering at Amity University, Noida.",
+      "My primary interests are Python development, AI/ML, backend development, and modern web technologies. I enjoy transforming ideas into real-world applications and constantly exploring new frameworks, cloud platforms, and developer tools.",
+      "Apart from coding, I enjoy working out at the gym, watching movies, listening to music, and exploring the latest advancements in AI."
+    ],
+    stats: [
+      { text: "B.Tech CSE Student", icon: "🎓" },
+      { text: "4+ Major Projects", icon: "💻" },
+      { text: "Full Stack Developer", icon: "🚀" },
+      { text: "AI/ML Enthusiast", icon: "🤖" },
+      { text: "Cloud Deployment Experience", icon: "🌐" },
+      { text: "Continuous Learner", icon: "📚" }
+    ]
   },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+  careerObjective: "To become a skilled Software Engineer specializing in Python, Artificial Intelligence, and scalable backend systems while contributing to impactful products that solve real-world problems.",
+  softSkills: [
+    "Problem Solving",
+    "Teamwork",
+    "Leadership",
+    "Communication",
+    "Quick Learner",
+    "Time Management"
+  ],
+  achievements: [
+    "Built multiple full-stack web applications.",
+    "Actively learning AI and Machine Learning.",
+    "Experience deploying applications on modern cloud platforms.",
+    "GitHub Student Developer Pack member.",
+    "Continuously improving through real-world projects."
+  ],
+  hobbies: [
+    "Gym & Fitness",
+    "Exploring AI",
+    "Movies",
+    "Music",
+    "Learning New Technologies"
+  ],
+  interests: [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Backend Development",
+    "Web Development",
+    "Open Source",
+    "Python",
+    "Cloud Computing"
+  ]
+};
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Calorithm",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "AI-powered Diet Planner that generates personalized meal plans based on user preferences using AI APIs. Features include BMI calculation, nutrition recommendations, user dashboard, responsive UI, authentication, and integration of payments.",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "flask",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "mongodb",
         color: "pink-text-gradient",
+      },
+      {
+        name: "ai-api",
+        color: "orange-text-gradient",
       },
     ],
     image: carrent,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "AssignMate",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A platform connecting students with professional academic writers. Streamlines assignment requirements, tracking, submission, writer interaction, user dashboards, and processes payments securely.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "nodejs",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "mongodb",
         color: "pink-text-gradient",
       },
     ],
@@ -240,26 +256,117 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Smart College Event Management System",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A full-featured event planning and management portal for colleges. Allows students to discover and register for campus events, access personal event schedules, and gives admins tools to manage bookings.",
     tags: [
       {
-        name: "nextjs",
+        name: "html5-css3",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "flask",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "sql",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
     source_code_link: "https://github.com/",
   },
+  {
+    name: "LocalBoy",
+    description:
+      "A localized tourism and travel ecosystem connecting visiting tourists with trusted local drivers. Provides direct communication, booking options, active tourist & driver dashboards, and an optimized interface.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "flask",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const skillsList = [
+  {
+    title: "Programming Languages",
+    items: [
+      { name: "Python", icon: python },
+      { name: "Java", icon: java },
+      { name: "C++", icon: cplusplus },
+      { name: "JavaScript", icon: javascript },
+      { name: "HTML5", icon: html },
+      { name: "CSS3", icon: css },
+    ]
+  },
+  {
+    title: "Frameworks",
+    items: [
+      { name: "Flask", icon: flask },
+      { name: "FastAPI", icon: fastapi },
+      { name: "React", icon: reactjs },
+    ]
+  },
+  {
+    title: "AI & Machine Learning",
+    items: [
+      { name: "Machine Learning" },
+      { name: "Deep Learning" },
+      { name: "Data Preprocessing" },
+      { name: "Logistic Regression" },
+      { name: "KNN" },
+      { name: "Naive Bayes" },
+      { name: "XGBoost" },
+      { name: "ROC-AUC Evaluation" },
+    ]
+  },
+  {
+    title: "Database & Cloud",
+    items: [
+      { name: "MongoDB", icon: mongodb },
+      { name: "SQL" },
+      { name: "Vercel", icon: vercel },
+      { name: "Render", icon: render_tech },
+      { name: "Railway", icon: railway_tech },
+    ]
+  },
+  {
+    title: "Developer Tools",
+    items: [
+      { name: "Git", icon: git },
+      { name: "GitHub", icon: github_tech },
+      { name: "VS Code", icon: vscode },
+      { name: "Docker", icon: docker },
+      { name: "Firebase", icon: firebase },
+      { name: "Razorpay" },
+      { name: "Stripe" },
+      { name: "Postman" },
+    ]
+  },
+  {
+    title: "Currently Learning",
+    items: [
+      { name: "Advanced Python" },
+      { name: "FastAPI" },
+      { name: "Machine Learning" },
+      { name: "Deep Learning" },
+      { name: "Docker" },
+      { name: "System Design" },
+      { name: "Cloud Deployment" },
+    ]
+  }
+];
+
+export { services, technologies, experiences, personalInfo, projects, skillsList };

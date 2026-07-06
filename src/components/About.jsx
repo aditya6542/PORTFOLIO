@@ -3,7 +3,7 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
+import { services, personalInfo } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -43,16 +43,29 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
+      <div className='mt-4 flex flex-col gap-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+        {personalInfo.aboutMe.paragraphs.map((paragraph, index) => (
+          <motion.p
+            key={index}
+            variants={fadeIn("", "", 0.1 * index, 1)}
+          >
+            {paragraph}
+          </motion.p>
+        ))}
+      </div>
+
+      <div className='mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 max-w-3xl'>
+        {personalInfo.aboutMe.stats.map((stat, index) => (
+          <motion.div
+            key={index}
+            variants={fadeIn("right", "spring", index * 0.15, 0.75)}
+            className='flex items-center gap-3 bg-tertiary p-4 rounded-xl border border-secondary/10 shadow-sm hover:border-[#915EFF]/50 transition-colors'
+          >
+            <span className='text-[24px]'>{stat.icon}</span>
+            <p className='text-white font-medium text-[15px]'>{stat.text}</p>
+          </motion.div>
+        ))}
+      </div>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (

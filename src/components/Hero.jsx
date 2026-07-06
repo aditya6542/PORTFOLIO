@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { personalInfo } from "../constants";
 
 const Hero = () => {
   return (
@@ -16,11 +17,14 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Adrian</span>
+            Hi, I'm <span className='text-[#915EFF]'>{personalInfo.name}</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+          <p className={`${styles.heroSubText} mt-2 text-white-100 font-medium`}>
+            B.Tech CSE Student | Python Developer <br className='sm:block hidden' />
+            AI & ML Enthusiast | Full Stack Developer
+          </p>
+          <p className='mt-4 text-white-100 max-w-2xl text-[16px] leading-[26px] font-normal opacity-80 sm:block hidden'>
+            {personalInfo.shortIntro}
           </p>
         </div>
       </div>
