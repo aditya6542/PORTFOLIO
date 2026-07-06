@@ -19,16 +19,13 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.png";
+import threejs from "./tech/threejs.svg";
 
 import python from "./tech/python.svg";
-import python_png from "./tech/python.png";
 import java from "./tech/java.svg";
 import cplusplus from "./tech/cplusplus.svg";
 import flask from "./tech/flask.svg";
-import flask_png from "./tech/flask.png";
 import fastapi from "./tech/fastapi.svg";
-import fastapi_png from "./tech/fastapi.png";
 import firebase from "./tech/firebase.svg";
 import vercel from "./tech/vercel.svg";
 import vscode from "./tech/vscode.svg";
@@ -70,13 +67,10 @@ export {
   typescript,
   threejs,
   python,
-  python_png,
   java,
   cplusplus,
   flask,
-  flask_png,
   fastapi,
-  fastapi_png,
   firebase,
   vercel,
   vscode,
